@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devicesform"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FEAFD"
+    tools:context=".DevicesForm">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:background="@drawable/btn_back"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Devices"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/btn_LED"
+            android:layout_width="135dp"
+            android:layout_height="33dp"
+
+            android:background="@drawable/btn_buttonmain"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:text="@string/btn_led"
+            android:textSize="18.5sp" />
+
+        <Button
+            android:id="@+id/btn_Sensor"
+            android:layout_width="131dp"
+            android:layout_height="33dp"
+            android:background="@drawable/btn_buttonmain"
+            android:text="@string/btn_sensors"
+            android:textSize="18.5sp" />
+
+        <Button
+            android:id="@+id/btn_diode"
+            android:layout_width="170dp"
+            android:layout_height="33dp"
+
+
+            android:background="@drawable/btn_buttonmain"
+            android:text="DIODES"
+            android:textSize="18.5sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

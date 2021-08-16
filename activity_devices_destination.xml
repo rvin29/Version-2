@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DevicesDestination"
+    android:id="@+id/devicesdestination">
+
+
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:paddingLeft="80dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="Devices"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/imagegholder"
+                android:layout_marginTop="40dp"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:src = "@drawable/ic_launcher_foreground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameholder"
+                android:text="Candidate Name"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/courseholder"
+
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.1"
+                android:paddingStart="15dp"
+                android:paddingRight="20dp"
+                android:text="Candidate Course"
+                android:textSize="23sp"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/img_symbol"
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_captionsymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/txt_symbolcaption"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_application"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:textSize="23sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:id="@+id/txt_reference"
+                android:layout_marginTop="200dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
